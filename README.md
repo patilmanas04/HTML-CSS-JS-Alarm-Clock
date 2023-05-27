@@ -2,6 +2,10 @@
 
 This project is an alarm clock web application developed with HTML, CSS, and JavaScript.
 
+## Demo
+
+This website is live at: https://patilmanas04.github.io/HTML-CSS-JS-Alarm-Clock/
+
 ## Usage
 
 1. Clone the repository or download the project files.
