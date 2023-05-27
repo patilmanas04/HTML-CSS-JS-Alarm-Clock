@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="alarm-icon-circle"> 
+            <?xml version="1.0" ?><svg data-name="Layer 1" height="60px" id="Layer_1" viewBox="0 0 200 200" width="60px" xmlns="http://www.w3.org/2000/svg"><title/><path d="M105,65a10,10,0,0,0-20,0v40a10,10,0,0,0,10,10h40a10,10,0,0,0,0-20H105Zm56-24a9.9,9.9,0,0,0-14,14,63.49,63.49,0,0,1,18.5,45,64.87,64.87,0,0,1-65,65c-36,0-65.5-29-65.5-65a64.87,64.87,0,0,1,65-65,10,10,0,0,0,0-20,85,85,0,1,0,85,85A83.12,83.12,0,0,0,161,41Z"/></svg>
+        </div>
+
+        <div class="display-current-time">
+            09:37 PM
+        </div>
+
+        <form id="alarm-time-input">
+            <div class="alarm-time-input-container">
+                <div class="column">
+                    <select name="hoursSelect" id="hours-select">
+                        <option value="hour" selected hidden>Hours</option>
+                    </select>
+                </div>
+        
+                <div class="column">
+                    <select name="minutesSelect" id="minutes-select">
+                        <option value="minutes" selected hidden>Minutes</option>
+                    </select>
+                </div>
+        
+                <div class="column">
+                    <select name="AmPmSelect" id="am-pm-select">
+                        <option value="am-pm" selected hidden>AM/PM</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <input type="submit" name="setAlarmButton" class="set-alarm-button" value="Set Alarm">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
